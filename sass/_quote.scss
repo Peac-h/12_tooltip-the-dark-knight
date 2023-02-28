@@ -1,0 +1,58 @@
+.frame {
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .quote {
+    width: 45rem;
+    height: 40rem;
+
+    background: var(--color-main);
+    color: var(--color-tertiary);
+
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-box);
+
+    position: relative;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "„";
+      font-family: arial;
+      font-size: 25rem;
+      color: var(--color-tultip);
+
+      top: -2%;
+      left: 1%;
+    }
+
+    &__phrase {
+      position: relative;
+    }
+
+    &__author {
+      font-family: var(--font-secondary);
+      font-size: 2.6rem;
+      letter-spacing: 1.35rem;
+      font-style: italic;
+      line-height: 2.8rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        letter-spacing: 0.7rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 38rem;
+    }
+  }
+}

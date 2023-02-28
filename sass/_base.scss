@@ -1,0 +1,49 @@
+:root {
+  // colors
+  --color-background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  --color-main: rgba(255, 255, 255, 0.15);
+  --color-secondary: rgba(35, 37, 38, 0.9);
+  --color-tertiary: rgba(255, 255, 255, 0.8);
+  --color-tultip: rgb(35, 37, 38);
+  --color-signature: rgba(255, 255, 255, 0.4);
+
+  // // fonts
+  --font-primary: "Martian Mono", monospace;
+  --font-secondary: "La Belle Aurore", cursive;
+
+  // shadow
+  --shadow-box: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+// breakpoints
+$bp-medium: 37.5em; ///////////// 600px
+$bp-small: 25em; ///////////// 400px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  background: var(--color-background);
+
+  @media only screen and (max-width: $bp-medium) {
+    letter-spacing: -1px;
+  }
+}
