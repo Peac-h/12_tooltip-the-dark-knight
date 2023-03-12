@@ -12,6 +12,8 @@ Made fully responsive for all screen sizes, with some changes for non-hover devi
 
 [CSS Tooltip & The Dark Knight](https://peac-h.github.io/12_tooltip-the-dark-knight/)
 
+![CSS Tooltip & The Dark Knight](https://raw.githubusercontent.com/Peac-h/12_tooltip-the-dark-knight/main/Screenshot.png)
+
 ## Built with
 
 - html
